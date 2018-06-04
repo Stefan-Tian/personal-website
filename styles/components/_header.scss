@@ -1,0 +1,126 @@
+.head-header {
+  padding: 2.5rem;
+  background-color: $color-primary-dark;
+  background-image: linear-gradient(
+      rgba($color-primary-dark, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url("/static/background.jpg");
+  background-size: cover;
+
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+}
+
+.head-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.head-nav button {
+  animation: move-in-from-top 1.6s;
+  &:hover {
+    text-shadow: 0.1rem 0.4rem 0.4rem #000;
+  }
+}
+
+.head-nav button:not(.stefan) {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.head-nav button:not(.contact) {
+  padding-right: 3rem;
+  transition: all 0.3s;
+}
+
+.head-nav button:hover:not(.stefan) {
+  color: $color-grey-light;
+  font-size: 1.8rem;
+}
+
+.contact {
+  border: 1.5px solid $color-grey;
+  padding: 1rem;
+  transition: all 0.3s;
+
+  &:hover {
+    border: 1.5px solid $color-grey-light;
+    box-shadow: 0.2rem 0.5rem 0.5rem #000;
+  }
+}
+
+.home {
+  margin-left: auto;
+}
+
+.stefan {
+  font-size: 2.9rem;
+  text-transform: uppercase;
+  font-style: italic;
+  transition: all 0.3s;
+
+  &:hover {
+    font-size: 3.4rem;
+    color: $color-grey-light;
+  }
+}
+
+.center {
+  display: grid;
+  justify-content: center;
+  margin: 15rem 0;
+  grid-template-rows: max-content min-content;
+  grid-template-columns: min-content min-content;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+
+  @mixin center-button {
+    color: $color-grey;
+    box-shadow: 0.7rem 0.7rem 0.5rem rgba(0, 0, 0, 0.2);
+    text-shadow: 0.05rem 0.05rem 0rem #c1c3c7, 0.06rem 0.06rem 0rem #c2c0c0,
+      0.08rem 0.08rem 0rem #d1d0d0, 0.1rem 0.1rem 0rem #b9babb;
+    border: 2px solid $color-grey;
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-grey-light;
+      font-size: 2.8rem;
+      box-shadow: 1.4rem 1.4rem 1rem rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__title {
+    justify-self: center;
+    grid-column: 1 / span 2;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: $shadow;
+    // text-shadow: 0.5rem 0.2rem 0.2rem rgb(19, 25, 75);
+
+    overflow: hidden;
+    border-right: 0.5rem solid $color-grey;
+    white-space: nowrap;
+    letter-spacing: 0.3rem;
+    margin: 0 auto;
+    animation: typing 2.8s steps(40, end),
+      blink-whitestick 0.8s step-end infinite;
+  }
+
+  &__portfolio {
+    justify-self: end;
+    @include center-button;
+    animation: move-in-from-left 1.9s;
+  }
+
+  &__resume {
+    justify-self: start;
+    @include center-button;
+    animation: move-in-from-right 1.9s;
+  }
+}

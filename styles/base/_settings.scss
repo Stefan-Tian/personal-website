@@ -1,0 +1,95 @@
+$color-primary: #328ce0;
+$color-primary-dark: #0f62b6;
+$color-grey: #f9f7f6;
+$color-grey-dark: #d4cece;
+$color-grey-light: #fefefe;
+$color-dark: rgb(83, 81, 81);
+$color-pink: #ec4468;
+$color-red: #ee1010;
+$color-orange: #ff7730;
+$color-yellow: #ffb900;
+$color-green: #099158;
+$color-green-light: #27e998;
+$color-black-dark: rgb(44, 43, 43);
+$color-black-light: rgb(49, 47, 47);
+
+$font-primary: "Montserrat", sans-serif;
+
+$shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 3px 0 #b9b9b9,
+  0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+  0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+  0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+  0 20px 20px rgba(0, 0, 0, 0.15);
+
+$shadow-thin: 0 0.5px 0 #ccc, 0 1px 0 #c9c9c9, 0 1.5px 0 #bbb, 0 1.5px 0 #b9b9b9,
+  0 2.5px 0 #aaa, 0 3px 0.5px rgba(0, 0, 0, 0.1), 0 0 2.5px rgba(0, 0, 0, 0.1),
+  0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+  0 2.5px 5px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.2),
+  0 10px 10px rgba(0, 0, 0, 0.15);
+
+$shadow-blue: 0 1px 0 rgb(24, 118, 206), 0 2px 0 #1a6cd6,
+  0 3px 0 rgb(20, 102, 196), 0 4px 0 #2c73dd, 0 5px 0 rgb(41, 124, 233),
+  0 3px 0.5px rgba(0, 0, 0, 0.1), 0 0 2.5px rgba(0, 0, 0, 0.1),
+  0 0.5px 1.5px rgba(0, 0, 0, 0.3), 0 1.5px 2.5px rgba(0, 0, 0, 0.2),
+  0 2.5px 5px rgba(0, 0, 0, 0.25);
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-whitestick {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: $color-grey;
+  }
+}
+
+@keyframes move-in-from-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-1.7rem);
+  }
+
+  70% {
+    transform: translateY(0.7rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes move-in-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-3.4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes move-in-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(3.4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

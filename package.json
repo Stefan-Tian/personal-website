@@ -1,0 +1,19 @@
+{
+  "name": "stefan-personal-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Stefan",
+  "license": "MIT",
+  "dependencies": {
+    "@zeit/next-sass": "^0.2.0",
+    "next": "^6.0.3",
+    "node-sass": "^4.9.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p 8000"
+  }
+}

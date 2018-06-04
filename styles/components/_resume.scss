@@ -1,0 +1,117 @@
+.resume-box {
+  background-color: $color-grey;
+  margin: 3.2rem;
+}
+
+.resume__header {
+  padding: 2.5rem;
+  background-color: $color-primary-dark;
+  background-image: linear-gradient(
+      rgba($color-primary-dark, 0.9),
+      rgba($color-primary-dark, 0.9)
+    ),
+    url("/static/resume-back.jpg");
+  background-size: cover;
+}
+
+.resume__education {
+  color: $color-dark;
+}
+
+.resume__coursework {
+  color: $color-dark;
+}
+
+.resume__container {
+  display: grid;
+
+  grid-row-gap: 2.5rem;
+
+  justify-content: center;
+  align-content: center;
+}
+
+.resume__home {
+  font-size: 1.6rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.head-circle {
+  margin-top: 3rem;
+  width: 18rem;
+  height: 18rem;
+
+  overflow: hidden;
+  border-radius: 50%;
+
+  justify-self: center;
+}
+
+.headshot {
+  width: 70rem;
+  height: 50rem;
+
+  margin: -10rem -31.5rem;
+}
+
+.intro {
+  font-size: 3.5rem;
+  justify-self: center;
+  text-shadow: $shadow-thin;
+
+  overflow: hidden;
+  border-right: 0.5rem solid $color-grey;
+  white-space: nowrap;
+  letter-spacing: 0.3rem;
+  margin: 0 auto;
+  animation: typing 2.2s steps(40, end), blink-whitestick 0.8s step-end infinite;
+}
+
+.education {
+  &__school {
+  }
+}
+
+.consulting {
+  &__description {
+    font-size: 1.2rem;
+  }
+}
+
+.quantlab {
+  &__description {
+    font-size: 1.2rem;
+  }
+}
+
+.expertise {
+  font-weight: bold;
+}
+
+.resume__project {
+  color: $color-dark;
+}
+
+.projects {
+  &__description {
+    font-size: 1.2rem;
+  }
+}
+
+.brief-intro {
+  font-size: 1.3rem;
+}
+
+.languages {
+  color: $color-dark;
+}
+
+.coursework {
+  &__course {
+    font-weight: 100;
+  }
+  &__instructor {
+    font-size: 1.2rem;
+  }
+}

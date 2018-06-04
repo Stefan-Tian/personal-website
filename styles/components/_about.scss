@@ -1,0 +1,214 @@
+.about-page {
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+
+  &__title {
+    background-image: linear-gradient(
+        to top right,
+        rgba($color-primary-dark, 0.8),
+        rgba($color-primary, 0.8)
+      ),
+      url("/static/background.jpg");
+    background-size: cover;
+    font-size: 7rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    // text-shadow: $shadow-blue;
+    letter-spacing: 0.9rem;
+  }
+
+  &-grid {
+    display: grid;
+    color: rgb(51, 50, 50);
+    margin: 2rem 15rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3rem;
+
+    &__card {
+      perspective: 100rem;
+      -moz-perspective: 100rem;
+      display: grid;
+      font-weight: 800;
+      font-style: italic;
+
+      &--1 {
+        overflow: hidden;
+
+        &--pic {
+          background: linear-gradient(to bottom right, $color-red, $color-pink),
+            url("/static/tv.jpg");
+          background-size: cover;
+          background-blend-mode: screen;
+          height: 30rem;
+          padding-top: 25rem;
+        }
+
+        &--title {
+          padding: 1.2rem 1.6rem;
+          margin: 1.5rem;
+          background: linear-gradient(to bottom right, $color-red, $color-pink);
+          box-shadow: 0.4rem 0.5rem 0.6rem rgba(#000, 0.2);
+          clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+        }
+      }
+
+      &--2 {
+        overflow: hidden;
+
+        &--pic {
+          background: linear-gradient(
+              to bottom right,
+              $color-orange,
+              $color-yellow
+            ),
+            url("/static/develop.jpg");
+          background-size: cover;
+          background-blend-mode: screen;
+          height: 30rem;
+          padding-top: 25rem;
+        }
+
+        &--title {
+          padding: 1.2rem;
+          margin: 1.5rem;
+          background: linear-gradient(
+            to bottom right,
+            $color-orange,
+            $color-yellow
+          );
+          box-shadow: 0.4rem 0.5rem 0.6rem rgba(#000, 0.2);
+          clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+        }
+      }
+
+      &--3 {
+        overflow: hidden;
+
+        &--pic {
+          background: linear-gradient(
+              to bottom right,
+              lighten($color-green, 10%),
+              $color-green-light
+            ),
+            url("/static/introvert.jpg");
+          background-size: cover;
+          background-blend-mode: screen;
+          height: 30rem;
+          padding-top: 25rem;
+        }
+
+        &--title {
+          padding: 1.2rem 1.5rem;
+          margin: 1.5rem;
+          background: linear-gradient(
+            to bottom right,
+            lighten($color-green, 10%),
+            $color-green-light
+          );
+          box-shadow: 5rem 3rem 5rem rgba(#000, 0.9);
+          clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+        }
+      }
+
+      &__side {
+        height: 37rem;
+        text-transform: uppercase;
+        border-radius: 1.2rem;
+        transition: all 1.2s ease;
+        backface-visibility: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+
+        &--front {
+          grid-row: 1 / 2;
+          grid-column: 1 / 2;
+          z-index: 1;
+
+          font-size: 2rem;
+        }
+
+        &--back {
+          transform: rotateY(180deg);
+          grid-row: 1 / 2;
+          grid-column: 1 / 2;
+          z-index: -1;
+          text-transform: none;
+          overflow: auto;
+
+          &--1 {
+            padding: 2rem;
+            font-size: 1.6rem;
+            background: linear-gradient(
+              to bottom right,
+              $color-red,
+              $color-pink
+            );
+          }
+
+          &--2 {
+            // text-align: justify;
+            padding: 1rem;
+            font-size: 1.1rem;
+            background: linear-gradient(
+              to bottom right,
+              $color-orange,
+              $color-yellow
+            );
+          }
+
+          &--3 {
+            // text-align: justify;
+            padding: 1rem;
+            font-size: 1.2rem;
+            background: linear-gradient(
+              to bottom right,
+              lighten($color-green, 10%),
+              $color-green-light
+            );
+          }
+        }
+      }
+
+      &:hover &__side--front {
+        transform: rotateY(-180deg);
+        z-index: -1;
+      }
+
+      &:hover &__side--back {
+        transform: rotateY(0deg);
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.hover-me {
+  text-align: center;
+  margin-top: 4rem;
+
+  &__notice {
+    background-image: linear-gradient(
+        to top right,
+        rgba($color-primary-dark, 0.8),
+        rgba($color-primary, 0.8)
+      ),
+      url("/static/background.jpg");
+    background-size: cover;
+    font-size: 3rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+
+  &__hearts {
+    font-size: 4rem;
+  }
+}
