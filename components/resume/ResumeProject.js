@@ -14,7 +14,7 @@ const ResumeProject = () => (
     </p>
     <p className="projects__description">Support Google and Facebook oauth</p>
     <p className="projects__description">
-      Have basic CRUD function and can see completion rate
+      Have basic CRUD function and it shows completion rate
     </p>
     <p className="projects__description">Support keyword searching</p>
     <h4 className="size4 projects__title">
@@ -32,10 +32,7 @@ const ResumeProject = () => (
     </p>
     <h4 className="size4 projects__title">
       CrowdCoin{" "}
-      <span className="brief-intro">
-        {" "}
-        - a safer alternative for Kickstarter
-      </span>
+      <span className="brief-intro"> - a safer alternative to Kickstarter</span>
     </h4>
     <p className="projects__description">
       Used <span className="expertise">Solidity</span> to write smart contracts
