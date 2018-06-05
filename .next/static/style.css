@@ -94,7 +94,8 @@ button:focus {
   background-color: #0f62b6;
   background-image: linear-gradient(rgba(15, 98, 182, 0.8), rgba(15, 98, 182, 0.8)), url("/static/background.jpg");
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%); }
 
 .head-nav {
   display: flex;
@@ -263,7 +264,7 @@ button:focus {
           padding: 1.2rem 1.5rem;
           margin: 1.5rem;
           background: linear-gradient(to bottom right, #0cc175, #27e998);
-          box-shadow: 5rem 3rem 5rem rgba(0, 0, 0, 0.9);
+          box-shadow: 0.4rem 0.5rem 0.6rem rgba(0, 0, 0, 0.2);
           clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%); }
       .about-page-grid__card__side {
         height: 37rem;
@@ -271,6 +272,7 @@ button:focus {
         border-radius: 1.2rem;
         transition: all 1.2s ease;
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
         .about-page-grid__card__side--front {
           grid-row: 1 / 2;
@@ -309,17 +311,16 @@ button:focus {
   .hover-me__notice {
     background-image: linear-gradient(to top right, rgba(15, 98, 182, 0.8), rgba(50, 140, 224, 0.8)), url("/static/background.jpg");
     background-size: cover;
-    font-size: 3rem;
+    font-size: 2rem;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     font-style: italic; }
   .hover-me__hearts {
-    font-size: 4rem; }
+    font-size: 3rem; }
 
 .resume-box {
-  background-color: #f9f7f6;
   margin: 3.2rem; }
 
 .resume__header {
@@ -327,12 +328,48 @@ button:focus {
   background-color: #0f62b6;
   background-image: linear-gradient(rgba(15, 98, 182, 0.9), rgba(15, 98, 182, 0.9)), url("/static/resume-back.jpg");
   background-size: cover; }
+  .resume__header--nav {
+    display: flex;
+    justify-content: space-between; }
+    .resume__header--nav--btn-1 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-style: italic;
+      transition: all 0.2s; }
+      .resume__header--nav--btn-1:hover {
+        font-size: 2.8rem;
+        text-shadow: 0.1rem 0.4rem 0.4rem #000; }
+    .resume__header--nav--btn-2 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      transition: all 0.2s; }
+      .resume__header--nav--btn-2:hover {
+        font-size: 2.2rem;
+        text-shadow: 0.1rem 0.4rem 0.4rem #000; }
 
 .resume__education {
-  color: #535151; }
+  background-color: #f9f7f6;
+  margin-top: 3rem;
+  color: #535151;
+  padding: 2rem; }
 
 .resume__coursework {
-  color: #535151; }
+  background-color: #f9f7f6;
+  margin-top: 3rem;
+  color: #535151;
+  padding: 2rem; }
+
+.resume__project {
+  background-color: #f9f7f6;
+  margin-top: 3rem;
+  color: #535151;
+  padding: 2rem; }
+
+.resume__languages {
+  background-color: #f9f7f6;
+  margin-top: 3rem;
+  color: #535151;
+  padding: 2rem; }
 
 .resume__container {
   display: grid;
@@ -378,17 +415,11 @@ button:focus {
 .expertise {
   font-weight: bold; }
 
-.resume__project {
-  color: #535151; }
-
 .projects__description {
   font-size: 1.2rem; }
 
 .brief-intro {
   font-size: 1.3rem; }
-
-.languages {
-  color: #535151; }
 
 .coursework__course {
   font-weight: 100; }
@@ -398,12 +429,49 @@ button:focus {
 
 .footer {
   display: grid;
-  padding: 4rem;
+  justify-content: center;
+  padding: 11rem 4rem;
   background: linear-gradient(to top right, #2c2b2b, #312f2f);
-  clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%); }
+  clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%); }
+  .footer__title {
+    justify-self: center;
+    margin-bottom: 2rem; }
   .footer--copyright {
     font-size: 1.5rem;
     margin: auto;
-    margin-bottom: -3rem; }
+    margin-bottom: -9rem; }
+  .footer__info {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row; }
+    .footer__info--icon {
+      fill: #fff;
+      height: 4rem;
+      width: 4rem;
+      margin: 1.1rem;
+      transform: translateY(-0.3rem); }
+    .footer__info--word {
+      font-size: 2.3rem; }
+
+.portfolioPage {
+  color: #0f62b6;
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 5rem; }
+  .portfolioPage__content {
+    font-size: 8rem;
+    text-transform: uppercase;
+    align-self: end; }
+  .portfolioPage__btn {
+    align-self: start;
+    font-size: 3.2rem;
+    transition: all 0.2s; }
+    .portfolioPage__btn:hover {
+      cursor: pointer;
+      font-size: 4rem; }
 
 /*# sourceMappingURL=style.css.map*/

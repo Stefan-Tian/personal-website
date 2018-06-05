@@ -1,5 +1,4 @@
 .resume-box {
-  background-color: $color-grey;
   margin: 3.2rem;
 }
 
@@ -12,14 +11,57 @@
     ),
     url("/static/resume-back.jpg");
   background-size: cover;
+
+  &--nav {
+    display: flex;
+    justify-content: space-between;
+
+    &--btn-1 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-style: italic;
+      transition: all 0.2s;
+
+      &:hover {
+        font-size: 2.8rem;
+        text-shadow: 0.1rem 0.4rem 0.4rem #000;
+      }
+    }
+
+    &--btn-2 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      transition: all 0.2s;
+
+      &:hover {
+        font-size: 2.2rem;
+        text-shadow: 0.1rem 0.4rem 0.4rem #000;
+      }
+    }
+  }
+}
+
+@mixin resume-block {
+  background-color: $color-grey;
+  margin-top: 3rem;
+  color: $color-dark;
+  padding: 2rem;
 }
 
 .resume__education {
-  color: $color-dark;
+  @include resume-block;
 }
 
 .resume__coursework {
-  color: $color-dark;
+  @include resume-block;
+}
+
+.resume__project {
+  @include resume-block;
+}
+
+.resume__languages {
+  @include resume-block;
 }
 
 .resume__container {
@@ -89,10 +131,6 @@
   font-weight: bold;
 }
 
-.resume__project {
-  color: $color-dark;
-}
-
 .projects {
   &__description {
     font-size: 1.2rem;
@@ -101,10 +139,6 @@
 
 .brief-intro {
   font-size: 1.3rem;
-}
-
-.languages {
-  color: $color-dark;
 }
 
 .coursework {

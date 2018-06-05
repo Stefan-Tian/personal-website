@@ -112,7 +112,7 @@
             lighten($color-green, 10%),
             $color-green-light
           );
-          box-shadow: 5rem 3rem 5rem rgba(#000, 0.9);
+          box-shadow: 0.4rem 0.5rem 0.6rem rgba(#000, 0.2);
           clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
         }
       }
@@ -123,6 +123,7 @@
         border-radius: 1.2rem;
         transition: all 1.2s ease;
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
         box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
 
         &--front {
@@ -200,7 +201,7 @@
       ),
       url("/static/background.jpg");
     background-size: cover;
-    font-size: 3rem;
+    font-size: 2rem;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -209,6 +210,6 @@
   }
 
   &__hearts {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }

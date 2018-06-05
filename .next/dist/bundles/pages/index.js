@@ -130,7 +130,7 @@ var About = function About() {
       fileName: _jsxFileName,
       lineNumber: 15
     }
-  }, "I watch all kinds of TV series. When I was is middle school, I stumbled upon this series called charmed, it's about 3 witch sisters fighting demons. I know the plot sound cheesy but I love that show anymay. Recently I discovered this show called Killing Eve, it's so great that BBC America even renewed it for season 2 before the show's scheduled premiere")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+  }, "I watch all kinds of TV series. When I was in middle school, I stumbled upon this series called charmed, it's about 3 witch sisters fighting demons. I know the plot sounds cheesy but I love that show anymay. Recently I discovered this show called Killing Eve, it's so great that BBC America even renewed it for season 2 before the show's scheduled premiere.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     className: "about-page-grid__card",
     __source: {
       fileName: _jsxFileName,
@@ -160,7 +160,7 @@ var About = function About() {
       fileName: _jsxFileName,
       lineNumber: 32
     }
-  }, "Before college, I've always thought that programming is only for math geniuses, and since I suck at math, I'd probably suck at programming too. But in my sophomore year of college, I thought to myself, why not give it shot and see how it goes. At first, I subscribed to datacamp in an attempt to learn more about data science. It's a great resource, but It wasn't what I expected. I learned a lot about how to analyze data and build predictive models, but deep down what I really want is to build apps that people can actually see in app stores or online. My friend suggested that I should check out web development if I want to get my hands dirty on actually building stuff, so I looked around the internet and purchased The Complete Web Development Bootcamp taught by Colt Steele. After that course, I just can't stop digging deeper into the web field.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+  }, "Before college, I've always thought that programming is only for math geniuses, and since I suck at math, I'd probably suck at programming too. But in my sophomore year of college, I thought to myself, why not give it a shot and see how it goes. At first, I subscribed to datacamp in an attempt to learn more about data science. It's a great resource, but It wasn't what I expected. I learned a lot about how to analyze data and build predictive models, but deep down what I really want is to build apps that people can actually see in app stores or online. My friend suggested that I should check out web development if I want to get my hands dirty with actually building stuff, so I looked around the internet and purchased The Complete Web Development Bootcamp taught by Colt Steele. After that course, I just can't stop digging deeper into the web field.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     className: "about-page-grid__card",
     __source: {
       fileName: _jsxFileName,
@@ -190,7 +190,7 @@ var About = function About() {
       fileName: _jsxFileName,
       lineNumber: 56
     }
-  }, "People always confuse being introverted with being shy. Well, that's not the case, at least not for me. Being an introvert basically means that I gain energy from being alone, and when I'm alone, I mostly spend time watching online courses to improve myself, or watch TV series to relax a bit. Being an introvert also does not mean that I don't like to talk to people. I only dislike small talks since I consider it to be meaningless. I love to talk about cool technologies and new software development trend with other people who share the same passion. I love to learn from people with different backgrounds to gain a brand new perspective or people with more experience to solve problems more elegantly"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+  }, "People always confuse being introverted with being shy. Well, that's not the case, at least not for me. Being an introvert basically means that I gain energy from being alone, and when I'm alone, I mostly spend time watching online courses to improve myself, or watch TV series to relax a bit. Being an introvert also does not mean that I don't like to talk to people. I only dislike small talks since I consider them to be meaningless. I love to talk about cool technologies and new software development trends with other people who share the same passion. I love to learn from people with different backgrounds to gain a brand new perspective or people with more experience to solve problems more elegantly."))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     className: "hover-me",
     __source: {
       fileName: _jsxFileName,
@@ -231,17 +231,65 @@ var Footer = function Footer() {
       fileName: _jsxFileName,
       lineNumber: 4
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h3", {
-    className: "size3",
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
+    className: "size1 footer__title",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
     }
-  }, "Contact"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
-    className: "footer--copyright",
+  }, "Contact"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "footer__info",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("svg", {
+    className: "footer__info--icon",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("use", {
+    xlinkHref: "/static/symbols.svg#icon-envelope",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    }
+  })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+    className: "footer__info--word",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    }
+  }, "stefanwork@gmail.com")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "footer__info",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("svg", {
+    className: "footer__info--icon",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("use", {
+    xlinkHref: "/static/symbols.svg#icon-mobile",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+    className: "footer__info--word",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    }
+  }, "+886 916 097 962")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+    className: "footer--copyright",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
     }
   }, "\xA9Copyright 2018 by Stefan Tian"));
 };
@@ -289,6 +337,7 @@ var Header = function Header() {
       lineNumber: 9
     }
   }, "I'm a web developer"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+    href: "/portfolio",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -377,7 +426,7 @@ function (_Component) {
       writable: true,
       value: function value() {
         return window.scrollTo({
-          top: 1500,
+          top: 3000,
           behavior: "smooth"
         });
       }
@@ -420,6 +469,7 @@ function (_Component) {
           lineNumber: 24
         }
       }, "Home")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+        href: "/portfolio",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 26
@@ -451,18 +501,16 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 35
         }
-      }, "R\xE9sum\xE9")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+      }, "R\xE9sum\xE9")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
         className: "contact",
+        onClick: function onClick() {
+          return _this2.scrollToBottom();
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 38
         }
-      }, "Contact")));
+      }, "Contact"));
     }
   }]);
 

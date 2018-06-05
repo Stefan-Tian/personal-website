@@ -7,7 +7,7 @@ const Header = () => (
     <Navbar />
     <div className="center">
       <h1 className="center__title">I'm a web developer</h1>
-      <Link>
+      <Link href="/portfolio">
         <button className="center__portfolio">Portfolio</button>
       </Link>
       <Link href="/resume">

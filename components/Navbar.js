@@ -10,7 +10,7 @@ class Navbar extends Component {
 
   scrollToBottom = () =>
     window.scrollTo({
-      top: 1500,
+      top: 3000,
       behavior: "smooth"
     });
 
@@ -23,7 +23,7 @@ class Navbar extends Component {
         <Link href="/">
           <button className="home">Home</button>
         </Link>
-        <Link>
+        <Link href="/portfolio">
           <button className="portfolio">Portfolio</button>
         </Link>
         {/* <Link> */}
@@ -34,9 +34,11 @@ class Navbar extends Component {
         <Link href="/resume">
           <button className="resume">Résumé</button>
         </Link>
-        <Link>
-          <button className="contact">Contact</button>
-        </Link>
+        {/* <Link> */}
+        <button className="contact" onClick={() => this.scrollToBottom()}>
+          Contact
+        </button>
+        {/* </Link> */}
       </nav>
     );
   }

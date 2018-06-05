@@ -1,7 +1,7 @@
 import React from "react";
 
 const ResumeLanguage = () => (
-  <div className="languages">
+  <div className="resume__languages">
     <h2 className="size2">Language Skills</h2>
     <h5 className="size5">Mandarin - mother tongue</h5>
     <h5 className="size5">English - TOEIC 970</h5>

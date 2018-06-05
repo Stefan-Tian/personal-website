@@ -1,0 +1,26 @@
+.portfolioPage {
+  color: $color-primary-dark;
+
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 5rem;
+
+  &__content {
+    font-size: 8rem;
+    text-transform: uppercase;
+    align-self: end;
+  }
+
+  &__btn {
+    align-self: start;
+    font-size: 3.2rem;
+    transition: all 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      font-size: 4rem;
+    }
+  }
+}
