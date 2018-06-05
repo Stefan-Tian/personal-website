@@ -2,7 +2,7 @@ module.exports =
 
         __NEXT_REGISTER_PAGE('/resume', function() {
           var comp = 
-      webpackJsonp([7],{
+      webpackJsonp([6],{
 
 /***/ "./components/Navbar.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1857,7 +1857,7 @@ var _default = resume;
 
 /***/ }),
 
-/***/ 6:
+/***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/resume.js");
@@ -1865,7 +1865,7 @@ module.exports = __webpack_require__("./pages/resume.js");
 
 /***/ })
 
-},[6])
+},[5])
           return { page: comp.default }
         })
       ;
