@@ -4,10 +4,7 @@ import Navbar from "./Navbar";
 
 const Header = props => (
   <header className="head-header">
-    <Navbar
-      scrollToAbout={props.scrollToAbout}
-      scrollToContact={props.scrollToContact}
-    />
+    <Navbar />
     <div className="center">
       <h1 className="center__title">I'm a web developer</h1>
       <Link href="/portfolio">

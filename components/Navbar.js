@@ -2,18 +2,6 @@ import React, { Component } from "react";
 import Link from "next/link";
 
 class Navbar extends Component {
-  scrollToMiddle = () =>
-    window.scrollTo({
-      top: 720,
-      behavior: "smooth"
-    });
-
-  scrollToBottom = () =>
-    window.scrollTo({
-      top: 3000,
-      behavior: "smooth"
-    });
-
   render() {
     return (
       <nav className="head-nav">
@@ -26,19 +14,15 @@ class Navbar extends Component {
         <Link href="/portfolio">
           <button className="portfolio">Portfolio</button>
         </Link>
-        {/* <Link> */}
-        <button className="about" onClick={() => this.scrollToMiddle()}>
-          About
-        </button>
-        {/* </Link> */}
+        <Link href="#about">
+          <button className="about">About</button>
+        </Link>
         <Link href="/resume">
           <button className="resume">Résumé</button>
         </Link>
-        {/* <Link> */}
-        <button className="contact" onClick={() => this.scrollToBottom()}>
-          Contact
-        </button>
-        {/* </Link> */}
+        <Link href="#footer">
+          <button className="contact">Contact</button>
+        </Link>
       </nav>
     );
   }

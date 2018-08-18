@@ -176,12 +176,12 @@
         }
       }
 
-      &:hover &__side--front {
+      &:hover &:active &__side--front {
         transform: rotateY(-180deg);
         z-index: -1;
       }
 
-      &:hover &__side--back {
+      &:hover &:active &__side--back {
         transform: rotateY(0deg);
         z-index: 1;
       }

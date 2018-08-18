@@ -1,13 +1,13 @@
 import React from "react";
 
 const Footer = () => (
-  <section className="footer">
+  <section className="footer" id="footer">
     <h1 className="size1 footer__title">Contact</h1>
     <div className="footer__info">
       <svg className="footer__info--icon">
         <use xlinkHref="/static/symbols.svg#icon-envelope" />
       </svg>
-      <p className="footer__info--word">stefanwork@gmail.com</p>
+      <p className="footer__info--word">stefanwork0113@gmail.com</p>
     </div>
     <div className="footer__info">
       <svg className="footer__info--icon">

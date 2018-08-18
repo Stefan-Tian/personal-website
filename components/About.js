@@ -1,7 +1,7 @@
 import React from "react";
 
 const About = () => (
-  <section className="about-page">
+  <section className="about-page" id="about">
     <h1 className="about-page__title">I'm...</h1>
     <div className="about-page-grid">
       <div className="about-page-grid__card">
@@ -70,7 +70,8 @@ const About = () => (
     </div>
     <div className="hover-me">
       <h3 className="size3 hover-me__notice">
-        hover over the cards to see more{"   "}
+        hover over the cards to see more
+        {"   "}
         <span className="hover-me__hearts"> &hearts;</span>
       </h3>
     </div>
