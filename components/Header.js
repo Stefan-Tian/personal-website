@@ -2,9 +2,12 @@ import React from "react";
 import Link from "next/link";
 import Navbar from "./Navbar";
 
-const Header = () => (
+const Header = props => (
   <header className="head-header">
-    <Navbar />
+    <Navbar
+      scrollToAbout={props.scrollToAbout}
+      scrollToContact={props.scrollToContact}
+    />
     <div className="center">
       <h1 className="center__title">I'm a web developer</h1>
       <Link href="/portfolio">

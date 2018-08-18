@@ -5,12 +5,15 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          <meta
+            name="viewport"
+            content="width=device-width, user-scalable=yes"
+          />
           <link rel="stylesheet" href="/_next/static/style.css" />
           <link
             href="https://fonts.googleapis.com/css?family=Montserrat"
             rel="stylesheet"
           />
-
           <link
             href="https://fonts.googleapis.com/css?family=Open+Sans"
             rel="stylesheet"

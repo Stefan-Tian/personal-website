@@ -1692,41 +1692,48 @@ function (_Document) {
           fileName: _jsxFileName,
           lineNumber: 7
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
+        name: "viewport",
+        content: "width=device-width, user-scalable=yes",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
         rel: "stylesheet",
         href: "/_next/static/style.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 12
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
         href: "https://fonts.googleapis.com/css?family=Montserrat",
         rel: "stylesheet",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 13
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
         href: "https://fonts.googleapis.com/css?family=Open+Sans",
         rel: "stylesheet",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 17
         }
       })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("body", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 22
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["Main"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 23
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 24
         }
       })));
     }
